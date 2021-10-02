@@ -10,6 +10,10 @@ git commit -m \'93Added DB Contextl to API Project\'94 \
 git push origin master\
 \
 \
-dotnet test --filter DisplayName=CommandAPI.Tests.CommandsControllerTests.ReturnsNullResultWhenInvalidID\
-\
-Jackson, Les. The Complete ASP.NET Core API Tutorial: Using .NET Core SDK 3.1 (p. 189). Kindle Edition. }
+- task: \
+	UseDotNet@2 \
+	displayName: ".NET Core 3.1.x" \
+	inputs:\
+		version: '3.1.x' \
+		packageType: sdk\
+}
